@@ -1,0 +1,116 @@
+body
+ {
+  font-family: B612;
+  background-color: #f2f4f7
+ }
+
+.nav
+ {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+ }
+
+.nav a
+ {
+  float: left;
+  padding-left: 93px;
+  padding-right: 93px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  text-align: center;
+ }
+
+.nav a:hover
+ {
+  background-color: #000;
+ }
+
+.nav a.active
+ {
+  background-color: #ff0000;
+ }
+
+/* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
+@media screen and (max-width: 500px)
+ {
+  .nav a
+   {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+   }
+ }
+
+ul
+ {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+ }
+
+li
+ {
+  float: left;
+ }
+
+li a
+ {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+ }
+
+li a:hover:not(.active)
+ {
+  background-color: #111;
+ }
+
+.active
+ {
+  background-color: #4CAF50;
+ }
+ 
+.spacing
+ {
+  padding-left: 80px;
+ }
+
+.heading
+ {
+  font-size: 60px;
+  padding-left: 50px;
+  padding-right: 50px;
+ }
+ 
+.techstack
+ {
+  width: 1300px;
+  padding: 30px;
+  box-shadow: 5px 8px 8px #888888;
+  background-color: red;
+ }
+ 
+.left
+ {
+  padding-top: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: white;
+ }
+ 
+footer
+ {
+  font-size: 15px;
+  background-color:red;
+  color:white;
+ }

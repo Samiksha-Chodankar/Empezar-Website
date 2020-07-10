@@ -1,0 +1,196 @@
+body
+ {
+  font-family: B612;
+  background-color: #f2f4f7
+ }
+
+.nav
+ {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+ }
+
+.nav a
+ {
+  float: left;
+  padding-left: 93px;
+  padding-right: 93px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  text-align: center;
+ }
+
+.nav a:hover
+ {
+  background-color: #000;
+ }
+
+.nav a.active
+ {
+  background-color: #ff0000;
+ }
+
+/* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
+@media screen and (max-width: 800px)
+ {
+  .nav a
+   {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+   }
+ }
+
+ul
+ {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+ }
+
+li
+ {
+  float: left;
+ }
+
+li a
+ {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+ }
+
+li a:hover:not(.active)
+ {
+  background-color: #111;
+ }
+
+.active
+ {
+  background-color: #4CAF50;
+ }
+ 
+.leftspacing
+ {
+  padding-left: 20px;
+  display: inline-block;
+ }
+ 
+.gujarat
+ {
+  position: absolute;
+  bottom: 70px;
+  left: 90px;
+ }
+
+.maharastra
+ {
+  position: absolute;
+  bottom: 110px;
+  left: 290px;
+ }
+ 
+.ndelhi
+ {
+  position: absolute;
+  bottom: 250px;
+  left: 340px;
+ }
+ 
+.goa
+ {
+  position: absolute;
+  bottom: 120px;
+  left: 500px;
+ }
+ 
+.img
+ {
+  padding-left: 60px;
+  padding-right: 40px;
+ }
+
+.container
+ {
+  padding-top: 20px;
+  padding-Bottom: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
+  background-color: white;
+  box-shadow: 5px 8px 8px #888888;
+  width: 83%;
+ }
+ 
+div.content
+ {
+  padding-right: 80px;
+  text-align: justify;
+  text-justify: inter-word;
+  font-weight: normal;
+ }
+ 
+.rightspacing
+ {
+  padding-left: 200px;
+ }
+ 
+.feedback
+ {
+  padding-left: 50px;
+ }
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #ff0000;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 350px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+footer
+ {
+  background-color:red;
+  color:white;
+ }

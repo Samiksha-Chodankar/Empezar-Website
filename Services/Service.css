@@ -1,0 +1,128 @@
+body
+ {
+  font-family: B612;
+  background-color: #f2f4f7
+ }
+
+.nav
+ {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+ }
+
+.nav a
+ {
+  float: left;
+  padding-left: 93px;
+  padding-right: 93px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  text-align: center;
+ }
+
+.nav a:hover
+ {
+  background-color: #000;
+ }
+
+.nav a.active
+ {
+  background-color: #ff0000;
+ }
+
+/* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
+@media screen and (max-width: 500px)
+ {
+  .nav a
+   {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+   }
+ }
+
+ul
+ {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+ }
+
+li
+ {
+  float: left;
+ }
+
+li a
+ {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+ }
+
+li a:hover:not(.active)
+ {
+  background-color: #111;
+ }
+
+.active
+ {
+  background-color: #4CAF50;
+ }
+
+.column
+ {
+  float: left;
+  width: 31.5%;
+  padding: 10px;
+  height: 600px;
+ }
+
+.img
+ {
+  background-color: White;
+  width: 50%;
+  padding-left: 40px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+ }
+
+.txt
+ {
+  text-align: justify;
+  text-justify: inter-word;
+  background-color: White;
+  width: 90%;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  color: red;
+ }
+
+.card
+ {
+  background-color: white;
+  padding-left: 25px;
+  padding-left: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 20px;
+ }
+ 
+footer
+ {
+  background-color:red;
+  color:white;
+ }
